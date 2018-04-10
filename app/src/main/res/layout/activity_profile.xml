@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#55384047"
+    tools:context="com.example.slash.fixit_2.SupervisorPkg.Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/rl1"
+        android:background="#384047">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:id="@+id/profile"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl1"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/basic"
+                android:text="Basic details"/>
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/firstNameTV"
+                android:text="First Name              :"
+                android:textColor="#333333"
+                android:layout_marginTop="50dp"
+                android:textSize="17dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DisplayFirstNameTV"
+                android:layout_marginTop="50dp"
+                android:textSize="17dp"
+                android:textColor="#333333"
+                android:layout_toRightOf="@+id/firstNameTV"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editFirstNameET"
+                android:layout_toRightOf="@+id/firstNameTV"
+                android:layout_marginTop="40dp"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/secondNameTV"
+                android:text="Second Name         :"
+                android:textSize="17dp"
+                android:textColor="#333333"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/firstNameTV"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DisplaySecondNameTV"
+                android:textSize="17dp"
+                android:textColor="#333333"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/firstNameTV"
+                android:layout_toRightOf="@+id/secondNameTV"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editSecondnameET"
+                android:layout_below="@+id/firstNameTV"
+                android:layout_toRightOf="@+id/secondNameTV"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactNumberTV"
+                android:text="Contact Number     :"
+                android:textSize="17dp"
+                android:textColor="#333333"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/secondNameTV"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DisplayContactNumberTV"
+                android:textSize="17dp"
+                android:textColor="#333333"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/secondNameTV"
+                android:layout_toRightOf="@+id/contactNumberTV"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editcontactnumberET"
+                android:inputType="number"
+                android:layout_below="@id/secondNameTV"
+                android:layout_toRightOf="@id/contactNumberTV"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailTV"
+                android:text="Email                        :"
+                android:textSize="17dp"
+                android:textColor="#333333"
+                android:layout_below="@+id/contactNumberTV"
+                android:layout_marginTop="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DIsplayEmailTV"
+                android:textSize="17dp"
+                android:layout_below="@+id/contactNumberTV"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/emailTV" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editEmailET"
+                android:layout_below="@id/contactNumberTV"
+                android:layout_toRightOf="@+id/emailTV"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/companyTV"
+                android:text="Company                 :"
+                android:textSize="17dp"
+                android:textColor="#333333"
+                android:layout_below="@+id/emailTV"
+                android:layout_marginTop="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DisplayCompanyTV"
+                android:textSize="17dp"
+                android:layout_below="@+id/emailTV"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/companyTV" />
+
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/RoleTV"
+                android:text="Role                          :"
+                android:textSize="17dp"
+                android:textColor="#333333"
+                android:layout_below="@+id/companyTV"
+                android:layout_marginTop="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DisplayRoleTV"
+                android:textSize="17dp"
+                android:layout_below="@+id/companyTV"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/RoleTV" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/project"
+                android:layout_below="@+id/RoleTV"
+                android:text="Project Detais"
+                android:layout_marginTop="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalProjects"
+                android:layout_below="@+id/project"
+                android:layout_marginTop="30dp"
+                android:textSize="15dp"
+                android:textColor="#333333"
+                android:text="Toal number of projects involved in           :"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DisplayTotalProjects"
+                android:layout_below="@id/project"
+                android:layout_toRightOf="@id/totalProjects"
+                android:textColor="#333333"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activeProjects"
+                android:layout_below="@+id/totalProjects"
+                android:textColor="#333333"
+                android:layout_marginTop="30dp"
+                android:textSize="15dp"
+                android:text="Number of active projects involved in       :"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DisplayActiveProjects"
+                android:textColor="#333333"
+                android:layout_below="@id/totalProjects"
+                android:layout_toRightOf="@id/activeProjects"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/completedProjects"
+                android:layout_below="@+id/activeProjects"
+                android:textColor="#333333"
+                android:layout_marginTop="30dp"
+                android:textSize="15dp"
+                android:text="Number of completed projects involved in:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DisplayCompletedProjects"
+                android:textColor="#333333"
+                android:layout_below="@id/activeProjects"
+                android:layout_toRightOf="@id/completedProjects"
+                android:layout_marginTop="30dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editBTN"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:layout_below="@id/completedProjects"
+                android:layout_marginTop="30dp"
+                android:background="#aa384047"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/saveBTN"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:layout_below="@id/completedProjects"
+                android:layout_marginTop="30dp"
+                android:background="#aa384047"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

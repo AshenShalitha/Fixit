@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="userType">
+        <item>Select user type...</item>
+        <item>Supervisor</item>
+        <item>Employee</item>
+    </string-array>
+    <string name="app_name">Fixit</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="company">Company</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="firts_name">Firts Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="string_last_name" />
+    <string name="password">Password</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="string_sign_up" />
+    <string name="user_name">User Name</string>
+    <string name="contact_number_e">Contact Number</string>
+    <string name="last_name_e">Last Name</string>
+    <string name="password_e">Password</string>
+    <string name="string_password_e" />
+    <string name="client">Client</string>
+    <string name="company_1">Company</string>
+    <string name="employee">Employee</string>
+    <string name="log_in">LOG IN</string>
+    <string name="password_1">Password</string>
+    <string name="username">UserName</string>
+    <string name="company_id">Company ID</string>
+    <string name="title_activity_client_home">activity_client_home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="signup2">SIGNUP</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name2">Last Name</string>
+    <string name="password2">Password</string>
+    <string name="user_name2">User Name</string>
+    <string name="title_activity_projects">Projects</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_view_projects">ViewProjects</string>
+    <string name="title_activity_view_project">ViewProject</string>
+    <string name="title_activity_emp_view_projects">EmpViewProjects</string>
+    <string name="title_activity_emp_project_details_tab">EmpProjectDetailsTab</string>
+    <string name="title_activity_company">Company</string>
+    <string name="title_activity_project_list">ProjectList</string>
+    <string name="title_activity_projects_list">ProjectsList</string>
+
+
+</resources>

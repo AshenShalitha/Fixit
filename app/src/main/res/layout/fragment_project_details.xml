@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.slash.fixit_2.SupervisorPkg.ProjectDetails">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:id="@+id/projectnameTV"
+                android:layout_marginTop="30dp"
+                android:text="Project Name:"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/DisplayProjectName"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/projectnameTV"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/DisplayProjectNameET"
+                android:textSize="15dp"
+                android:layout_marginTop="21dp"
+                android:layout_toRightOf="@id/projectnameTV"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:id="@+id/descriptionTV"
+                android:layout_marginTop="30dp"
+                android:text="Discription:"
+                android:layout_below="@id/DisplayProjectName"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/DisplayDescription"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/DisplayProjectName"
+                android:layout_toRightOf="@id/descriptionTV"
+                android:scrollbars="vertical"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/DisplayDescriptionET"
+                android:textSize="15dp"
+                android:layout_marginTop="21dp"
+                android:layout_below="@id/DisplayProjectName"
+                android:layout_toRightOf="@id/descriptionTV"
+                android:scrollbars="vertical"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:id="@+id/locationTV"
+                android:layout_marginTop="30dp"
+                android:text="Location:"
+                android:layout_below="@id/DisplayDescription"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/DisplayLocation"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/DisplayDescription"
+                android:layout_toRightOf="@id/locationTV"
+                android:scrollbars="vertical"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/DisplayLocationET"
+                android:textSize="15dp"
+                android:layout_marginTop="21dp"
+                android:layout_below="@id/DisplayDescriptionET"
+                android:layout_toRightOf="@id/locationTV"
+                android:scrollbars="vertical"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/deadlineTV"
+                android:text="Deadline:"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/DisplayLocation"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/DisplayDeadline"
+                android:layout_marginTop="30dp"
+                android:textSize="15dp"
+                android:layout_toRightOf="@id/deadlineTV"
+                android:layout_below="@+id/DisplayLocation"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/DisplayDeadlineET"
+                android:layout_marginTop="21dp"
+                android:textSize="15dp"
+                android:layout_toRightOf="@id/deadlineTV"
+                android:layout_below="@+id/DisplayLocation"
+                android:visibility="gone"
+                android:clickable="true"
+                style="@android:style/Widget.EditText"/>
+
+            <TextView
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/employeeTV"
+                android:text="Assigned Employee:"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/DisplayDeadline"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/employee"
+                android:layout_marginTop="30dp"
+                android:textSize="15dp"
+                android:layout_below="@+id/DisplayDeadline"
+                android:layout_toRightOf="@id/employeeTV"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/employeeET"
+                android:layout_marginTop="21dp"
+                android:textSize="15dp"
+                android:layout_below="@+id/DisplayDeadline"
+                android:layout_toRightOf="@id/employeeTV"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/employee"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editBTN"
+                    android:text="Edit"
+                    android:textAllCaps="false"
+                    android:textSize="17dp"
+                    android:layout_alignTop="@+id/deleteBTN" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gradeBTN"
+                    android:text="Grade"
+                    android:textAllCaps="false"
+                    android:textSize="17dp"
+                    android:layout_alignTop="@+id/deleteBTN"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saveBTN"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textSize="17dp"
+                    android:layout_alignTop="@+id/deleteBTN"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deleteBTN"
+                    android:text="Delete"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="30dp"
+                    android:textSize="17dp"
+                    android:layout_toRightOf="@id/editBTN" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reviseBTN"
+                    android:text="Revise"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="30dp"
+                    android:textSize="17dp"
+                    android:layout_toRightOf="@id/editBTN"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

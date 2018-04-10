@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.slash.fixit_2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginAndSignupPkg.Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginAndSignupPkg.LoginAndSignup" />
+        <activity android:name=".LoginAndSignupPkg.Login" />
+        <activity android:name=".LoginAndSignupPkg.Signup" />
+        <activity android:name=".SupervisorPkg.ClientHome" />
+        <activity android:name=".LoginAndSignupPkg.Signup_1" />
+        <activity android:name=".LoginAndSignupPkg.CompanySelect" />
+        <activity android:name=".SupervisorPkg.CreateProject" />
+        <activity android:name=".SupervisorPkg.Messages" />
+        <activity android:name=".SupervisorPkg.Profile" />
+        <activity android:name=".NotificationPkg.Notifications" />
+        <activity android:name=".EmployeePkg.EmployeeHome" />
+        <activity android:name=".EmployeePkg.EmpMessages" />
+        <activity android:name=".EmployeePkg.EmpProfile" />
+        <activity android:name=".SupervisorPkg.CreateIssue" />
+        <activity
+            android:name=".SupervisorPkg.GradePopUp"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".SupervisorPkg.Projects"
+            android:label="@string/title_activity_projects"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SupervisorPkg.ViewProject"
+            android:label="@string/title_activity_view_project"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".SupervisorPkg.ViewIssue" />
+
+        <service android:name=".NotificationPkg.AppFCMService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".NotificationPkg.AppFirebaseInstantIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".SupervisorPkg.UsersListPopUp" />
+        <activity
+            android:name=".EmployeePkg.EmpViewProjects"
+            android:label="@string/title_activity_emp_view_projects"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ChatPkg.ChatView" />
+        <activity
+            android:name=".EmployeePkg.EmpProjectDetailsTab"
+            android:label="@string/title_activity_emp_project_details_tab"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".SupervisorPkg.ViewImagePopUp" />
+        <activity android:name=".EmployeePkg.EmpViewIssue" />
+        <activity android:name=".EmployeePkg.MarkProgressPopUp" />
+        <activity
+            android:name=".SupervisorPkg.Company"
+            android:label="@string/title_activity_company"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

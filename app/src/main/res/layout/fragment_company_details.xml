@@ -1,0 +1,153 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.slash.fixit_2.SupervisorPkg.CompanyDetails">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTV"
+        android:text="Name             :"
+        android:textColor="#333333"
+        android:layout_marginTop="5dp"
+        android:textSize="17dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DisplayNameTV"
+        android:layout_marginTop="5dp"
+        android:textSize="17dp"
+        android:textColor="#333333"
+        android:layout_toRightOf="@+id/nameTV"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressTV"
+        android:text="Address         :"
+        android:textSize="17dp"
+        android:textColor="#333333"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/nameTV"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DisplayAddressTV"
+        android:textSize="17dp"
+        android:textColor="#333333"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/nameTV"
+        android:layout_toRightOf="@+id/addressTV"/>
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactNumberTV"
+        android:text="Contact Number  :"
+        android:textSize="17dp"
+        android:textColor="#333333"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/DisplayAddressTV"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DisplayContactNumberTV"
+        android:textSize="17dp"
+        android:textColor="#333333"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/DisplayAddressTV"
+        android:layout_toRightOf="@+id/contactNumberTV"/>
+
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailTV"
+        android:text="Email                :"
+        android:textSize="17dp"
+        android:textColor="#333333"
+        android:layout_below="@+id/contactNumberTV"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DIsplayEmailTV"
+        android:textSize="17dp"
+        android:layout_below="@+id/contactNumberTV"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/emailTV" />
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/supervisors"-->
+            <!--android:text="Number of registered supervisors :"-->
+            <!--android:textSize="17dp"-->
+            <!--android:layout_below="@+id/emailTV"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:textColor="#333333"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/Displaysupervisors"-->
+            <!--android:layout_below="@+id/emailTV"-->
+            <!--android:layout_toRightOf="@+id/supervisors"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:textSize="17dp"-->
+            <!--android:layout_marginLeft="10dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/employees"-->
+            <!--android:text="Number of registered employees    :"-->
+            <!--android:textSize="17dp"-->
+            <!--android:layout_below="@+id/supervisors"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:textColor="#333333"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/displayEmployees"-->
+            <!--android:layout_below="@+id/supervisors"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:textSize="17dp"-->
+            <!--android:layout_toRightOf="@+id/employees"-->
+            <!--android:layout_marginLeft="10dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/projects"-->
+            <!--android:text="Number of projects envolved            :"-->
+            <!--android:textSize="17dp"-->
+            <!--android:layout_below="@+id/employees"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:textColor="#333333"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/displayProjects"-->
+            <!--android:layout_below="@+id/employees"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:textSize="17dp"-->
+            <!--android:layout_toRightOf="@+id/employees"-->
+            <!--android:layout_marginLeft="10dp"/>-->
+
+    </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

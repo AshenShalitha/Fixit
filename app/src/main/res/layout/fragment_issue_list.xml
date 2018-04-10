@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.slash.fixit_2.SupervisorPkg.IssueList">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/reportedIssues"
+        android:dividerHeight="0.1dp"
+        android:divider="#0000CC"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </ListView>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addIssueBTN"
+        android:layout_marginBottom="20dp"
+        android:text="Add new issue"
+        android:textColor="#dddddd"
+        android:layout_below="@+id/reportedIssues"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:background="@drawable/background_login"
+        android:backgroundTint="#384059" />
+
+</RelativeLayout>

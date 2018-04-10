@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_emp_view_issue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.slash.fixit_2.EmployeePkg.EmpViewIssue">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/rl1"
+        android:background="#222222">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Issue Details"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sc"
+        android:layout_below="@+id/r11"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/details"
+                android:layout_marginTop="30dp"
+                android:text="Details:"
+                android:textSize="17dp"
+                android:textColor="#222222"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/issueNameTV"
+                android:text="Name:"
+                android:textSize="17dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/details"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/displayIssueNameTV"
+                android:textSize="17dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/issueNameTV"
+                android:layout_below="@id/details"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionTV"
+                android:layout_below="@id/issueNameTV"
+                android:layout_marginTop="30dp"
+                android:textSize="17dp"
+                android:text="Description:"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/displayDescriptionTV"
+                android:layout_toRightOf="@+id/descriptionTV"
+                android:layout_below="@id/displayIssueNameTV"
+                android:layout_marginTop="30dp"
+                android:textSize="17dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewImageBTN"
+                android:text="View Image"
+                android:layout_below="@id/displayDescriptionTV"
+                android:layout_marginTop="30dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:text="Progress:"
+        android:textSize="17dp"
+        android:layout_below="@+id/sc"
+        android:layout_marginTop="20dp"
+        android:textColor="#222222" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:text="Date"
+        android:layout_below="@+id/progress"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail"
+        android:text="Detail"
+        android:layout_below="@+id/progress"
+        android:layout_toRightOf="@+id/date"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="150dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressLV"
+        android:layout_below="@+id/progress"
+        android:layout_marginTop="30dp"></ListView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/markProgressBTN"
+        android:layout_below="@+id/progressLV"
+        android:text="Mark Progres"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
